@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Address Tracker</title>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="top">
+        <h1 id="title">Simple IP Address Tracer</h1>
+        <div class="searchContainer">
+            <input type="text" name="search" id="search" class="search"
+                placeholder="Search for any IP address or domain">
+            <button class="searchBtn"><img src="assets/icon-arrow.svg" alt=""></button>
+        </div>
+        <div class="foundInfo">
+            <div class="ip con">
+                <h4>IP ADDRESS</h4>
+                <h2 class="ipOut"></h2>
+            </div>
+            <div class="local con">
+                <h4>LOCATION</h4>
+                <h2 class="localOut"></h2>
+            </div>
+            <div class="tz con">
+                <h4>TIMEZONE</h4>
+                <h2 class="tzOut"></h2>
+            </div>
+            <div class="isp con">
+                <h4>ISP</h4>
+                <h2 class="ispOut"></h2>
+            </div>
+        </div>
+    </div>
+    <div class="map" style="height: 65%;"></div>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
